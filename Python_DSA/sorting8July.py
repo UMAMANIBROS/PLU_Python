@@ -10,7 +10,6 @@ O(n^2) :
 O(nlogn) :
 1. Merge Sort
 2. Heap Sort
-3. Quick Sort
 '''
 
 
