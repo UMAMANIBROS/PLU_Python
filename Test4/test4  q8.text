@@ -1,0 +1,21 @@
+Question 8
+Consider the following table.
+Orders
+| OrderID | CustomerName | OrderDate | Amount |
+| ------- | ------------ | --------- | ------ |
+Tasks
+1. Create an index on OrderID.
+2. Explain one benefit of creating an index
+code
+
+CREATE DATABASE OrderDB;
+USE OrderDB;
+CREATE TABLE Orders (
+    OrderID INT,
+    CustomerName VARCHAR(100),
+    OrderDate DATE,
+    Amount DECIMAL(10,2)
+);
+CREATE INDEX idx_OrderID
+ON Orders (OrderID);
+SHOW INDEX FROM Orders;

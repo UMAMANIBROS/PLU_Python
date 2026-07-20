@@ -1,0 +1,32 @@
+Question 2:
+Consider the following table.
+Student
+| StudentID | Name | Course | Marks |
+| --------- | ----- | ------ | ----- |
+| 101 | Rahul | Python | 80 |
+| 102 | Priya | Java | 75 |
+| 103 | Aman | Python | 90 |
+| 104 | Neha | SQL | 70 |
+Write SQL queries to:
+1. Display all student records.
+2. Display only Name and Marks.
+3. Display only the Course column.
+code
+CREATE DATABASE student;
+USE student;
+CREATE TABLE result (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Course VARCHAR(20),
+    Marks INT NOT NULL
+);
+INSERT INTO result (StudentID, Name, Course, Marks)
+VALUES
+(101, 'Rahul', 'Python', 80),
+(102, 'Priya', 'Java', 75),
+(103, 'Aman', 'Python', 90),
+(104, 'Neha', 'SQL', 70);
+SELECT * FROM result;
+SELECT Name, Marks FROM result;
+SELECT Course FROM result;
+
